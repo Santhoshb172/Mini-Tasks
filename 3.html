@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us form</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            width: 40%;
+            border: 2px solid black;
+            margin: auto;
+            padding: auto;
+            background-color: rgba(76, 76, 88, 0.068);
+        }
+
+        .user {
+            padding-left: 75px;
+            margin-bottom: 10px;
+            color: cornsilk;
+        }
+
+        .mail {
+            padding-left: 75px;
+            margin-bottom: 10px;
+            color: cornsilk;
+        }
+
+        .number {
+            padding-left: 75px;
+            margin-bottom: 10px;
+            color: cornsilk;
+        }
+
+        .query {
+            padding-left: 75px;
+            margin-bottom: 10px;
+            color: cornsilk;
+        }
+
+        .button {
+            padding-left: 75px;
+            margin-bottom: 50px;
+
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("bg image.jpg");
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .center {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <form>
+        <div class="container">
+            <div class="header">
+                <div style="text-align: center;">
+                    <span style="font-size: 25px;color: rgb(69, 101, 245);">CONTACT US</span><br>
+                    <span style="color: darkkhaki;">We will get to you soon asap!</span>
+                </div>
+            </div>
+            <div class="user">
+                <div>
+                    <label>Name</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Firstname" required>
+                    <input type="text" placeholder="Lastname" required>
+                </div>
+            </div>
+            <div class="mail">
+                <div>
+                    <label for="email">E-mail</label>
+                </div>
+                <div>
+                    <input type="email" placeholder="E-mail" name="email" id="email" size="46px" required>
+                </div>
+                <div>
+                    <small style="color: darkkhaki;">Example : abc@xyz.com</small>
+                </div>
+            </div>
+            <div class="number">
+                <div>
+                    <label>Phone number</label>
+                </div>
+                <div>
+                    <input type="number" required>
+                </div>
+            </div>
+            <div class="query">
+                <div>
+                    <label>Message</label>
+                </div>
+                <div>
+                    <textarea rows="8" cols="46" required></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">SEND</button>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="pagination">
+                <a href="2.html">PREVIOUS</a>
+                <a href="4.html">NEXT</a>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
